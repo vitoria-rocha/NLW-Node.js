@@ -1,0 +1,15 @@
+API: nao eh instalavel, nao eh um programa. Eh um conceito, sao padroes que podemos ter em nosso projeto
+a API divide cliente e servidor. 
+O cliente faz requisiçoes para o servidor e o servidor retorna uma resposta.
+API permite organizar o projeto.
+
+Para executar um arquivo TS com node eh preciso converter em js.
+Para converter digite no terminal:
+
+yarn tsc
+
+Automaticamente ele cria um arquivo .js convertido
+
+Entao:
+
+node nomedoarquivoconvertido.js
