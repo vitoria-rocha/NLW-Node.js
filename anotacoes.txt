@@ -3,6 +3,8 @@ a API divide cliente e servidor.
 O cliente faz requisiçoes para o servidor e o servidor retorna uma resposta.
 API permite organizar o projeto.
 
+
+----Executar arquivo TS
 Para executar um arquivo TS com node eh preciso converter em js.
 Para converter digite no terminal:
 
@@ -13,3 +15,84 @@ Automaticamente ele cria um arquivo .js convertido
 Entao:
 
 node nomedoarquivoconvertido.js
+
+----Adicionando o express:
+import express from "express";
+
+const app = express();
+
+app.listen(8080, () => console.log("server is running: http://localhost:8080"));
+
+Terminal:
+yarn add @types/express
+
+
+----INSOMINIA:
+criar os metodos la
+
+GET => buscar uma informaçao (listagem de contatos)
+POST => inserir uma informaçao dentro da API (criar usuario)
+PUT => alterar uma informaçao (alterar dados do usuario email, senha)
+DELETE => remover um dado produto ou usuario
+PATCH => alterar uma informacao especifica
+
+
+
+
+----AULA 2----
+Tipos de parametros:
+routes => http://localgost:8080/produtos/090987662
+querys => http://localgost:8080/produtos/?name=reclado&description=primeiro
+bodys => {
+  "name": "teclado",
+  "description": "primeiro",
+}
+
+
+----TypeORM
+yarn add typeorm reflect-metadata sqlite3
+
+Add no src/server.js:
+import "reflect-metadata"; 
+import express from "express";
+
+const app = express();
+
+app.listen(8080, () => console.log("server is running: http://localhost:8080"));
+
+Criar arquivo ormconfig.json na pasta SRC
+
+----CRiando database
+criar asta database
+arquivo orm config com o objeto onfigurado (na pasta principal)
+arquivo typescrip fazendo a conexao (na pasta database):
+
+import { createConnection } from "typeorm";
+
+createConnection();
+
+yann dev //faz gerar um arquivo do sqlite
+
+Migrations: controle de versionamento dentro da aplicaçao 
+Faz com que todos que estao trabalhando no projeto tenham a mesma versao do banco de dadosQUando a aplicacao ir pra produucao eh so rodar as migrations que as tabelas serao criadas
+
+----Criando uma entidade nas migrations
+yarn typeorm migration:create -n CreateUsers
+
+----Executando uma migration    
+yarn typeorm migration:running
+
+----Removendo uma migration
+yarn typeorm migration:revert
+
+
+
+
+
+
+
+
+
+***************************************
+---- atalhos -----
+CTRL + J = Abre terminal vscode 
