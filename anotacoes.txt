@@ -76,6 +76,9 @@ yann dev //faz gerar um arquivo do sqlite
 Migrations: controle de versionamento dentro da aplicaçao 
 Faz com que todos que estao trabalhando no projeto tenham a mesma versao do banco de dadosQUando a aplicacao ir pra produucao eh so rodar as migrations que as tabelas serao criadas
 
+----Criando um arquivo de entidade
+yarn typeorm entity:create -n nomedaentidade
+
 ----Criando uma entidade nas migrations
 yarn typeorm migration:create -n CreateUsers
 

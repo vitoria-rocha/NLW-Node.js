@@ -11,9 +11,10 @@
 
 - Cadastro de TAG
 
+  [ ] Nao eh permitido cadastrar TAG sem nome
+
   [ ] Nao eh permitido cadastrar mais de uma TAG com o mesmo nome
   
-  [ ] Nao eh permitido cadastrar TA sem nome
   
   [ ] Nao eh permitido o cadastro por usuarios que nao sao administradores
   
