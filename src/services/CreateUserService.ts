@@ -32,6 +32,7 @@ class CreateUserService {
 
     await usersRepositories.save(user);
     
+    
     return user;
   }
 }
