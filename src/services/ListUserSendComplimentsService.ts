@@ -17,4 +17,4 @@ class ListUserSendComplimentsService {
   }
 }
 
-export { ListUserSendComplimentsService}
+export { ListUserSendComplimentsService }
