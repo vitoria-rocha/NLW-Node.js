@@ -89,6 +89,20 @@ yarn typeorm migration:running
 yarn typeorm migration:revert
 
 
+----JWT
+JSON web tokens, serve para criar web tokens, permite fazer a comunicaçao entre requisiçoes uutilizndo um tokens
+passamos tokens entre requisiçoes para verificar autorizaçoes.
+
+yarn add jsonwebtoken
+yarn add @types/jsonwebtoken -D
+
+Adicionando coluna em uma migration
+typeorm migration:create -n NOMEDOARQUIVO
+
+yarn typeorm migration:run
+
+
+
 
 
 
