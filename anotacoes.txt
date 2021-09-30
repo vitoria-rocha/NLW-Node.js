@@ -104,7 +104,8 @@ yarn typeorm migration:run
 
 
 
-
+----Biblioteca de criptografia
+yarn add bcryptjs
 
 
 
