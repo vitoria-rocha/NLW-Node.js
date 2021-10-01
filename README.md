@@ -38,6 +38,6 @@
 
   mostrar usuario q inseriu o produto
 
-  [ ] codigo gerado automaticamente
+  [ x ] codigo id gerado automaticamente
   [ ] ordem crescente
-  [ ] codigo unico
+  [ x ] codigo unico

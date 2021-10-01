@@ -22,10 +22,16 @@ export class CreateProducts1633093346637 implements MigrationInterface {
                     },
                     {
                         name: "bar_code",
-                        type: "int",
+                        type: "varchar",
+                        isUnique: true,
                     },
                     {
                         name: "created_at",
+                        type: "timestamp",
+                        default: "now()",
+                    },
+                    {
+                        name: "updated_at",
                         type: "timestamp",
                         default: "now()",
                     }
