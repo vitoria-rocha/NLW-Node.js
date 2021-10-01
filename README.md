@@ -21,8 +21,23 @@
 
 - Cadastro de elogios
 
-  [ ] Nao eh permitido um usuario cadastrar um elogio para si
+  [ x ] Nao eh permitido um usuario cadastrar um elogio para si
 
-  [ ] Nao eh permitido cadastrar elogios para usuarios invalidos
+  [ x ] Nao eh permitido cadastrar elogios para usuarios invalidos
 
-  [ ] O usuario precisa estar autenticado na aplicacao
+  [ x ] O usuario precisa estar autenticado na aplicacao
+
+- Cadastro de produtos
+
+  Tabela de produts: id, name, price, codigo
+  
+  rotas:
+  criar novo produto
+  atualizar produto
+  listar produtos (do usuario autenticado)
+
+  mostrar usuario q inseriu o produto
+
+  [ ] codigo gerado automaticamente
+  [ ] ordem crescente
+  [ ] codigo unico

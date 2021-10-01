@@ -21,6 +21,7 @@ class User {
 
   @Column()
   admin: boolean;
+  
   //excluir as senhas, seguranca
   @Exclude()
   @Column()
