@@ -27,9 +27,9 @@
 
   [ x ] O usuario precisa estar autenticado na aplicacao
 
-- Cadastro de produtos
+- Cadastro de produtoss
 
-  Tabela de produts: id, name, price, codigo
+  Tabela de produts: id, name, price, bar_code
   
   rotas:
   criar novo produto
