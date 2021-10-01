@@ -35,7 +35,7 @@ export class CreateProducts1633093346637 implements MigrationInterface {
                         type: "timestamp",
                         default: "now()",
                     }
-                ]
+                ],
             })
         )
     }

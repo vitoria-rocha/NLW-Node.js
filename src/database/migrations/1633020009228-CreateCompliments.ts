@@ -18,7 +18,7 @@ export class CreateCompliments1633020009228 implements MigrationInterface {
                     },
                     {
                         name: "user_receiver",
-                        type: "uudi",
+                        type: "uuid",
                     },
                     {
                         name: "tag_id",

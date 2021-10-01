@@ -1,5 +1,5 @@
-import { ProductsRepositories } from "../repositories/ProductsRepositories";
 import { getCustomRepository } from "typeorm"
+import { ProductsRepositories } from "../repositories/ProductsRepositories";
 
 interface IProductRequest {
   name: string;
@@ -11,7 +11,7 @@ class CreateProductService {
   async execute ({ name, price, bar_code }: IProductRequest){
     
     const productsRepositories = getCustomRepository (ProductsRepositories);
-
+ 
     const bar_codeAlreadyExists = await productsRepositories.findOne({
       bar_code
     });
