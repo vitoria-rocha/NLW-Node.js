@@ -40,8 +40,8 @@ router.get("/users/compliments/receive", ensureAuthenticated, listUserReceiveCom
 
 router.get("/users", ensureAuthenticated, listUsersController.handle);
 
-router.post("/products", createProductController.handle);
-router.get("/users/products", listProductsController.handle);
+router.post("/products", ensureAuthenticated, createProductController.handle);
+router.get("/users/products",ensureAuthenticated, listProductsController.handle);
 
 
 export { router };

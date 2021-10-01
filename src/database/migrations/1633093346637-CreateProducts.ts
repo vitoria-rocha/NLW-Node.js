@@ -26,6 +26,10 @@ export class CreateProducts1633093346637 implements MigrationInterface {
                         isUnique: true,
                     },
                     {
+                        name: "user_creator",
+                        type: "uuid",
+                    },
+                    {
                         name: "created_at",
                         type: "timestamp",
                         default: "now()",
@@ -36,6 +40,16 @@ export class CreateProducts1633093346637 implements MigrationInterface {
                         default: "now()",
                     }
                 ],
+                foreignKeys: [
+                    {
+                        name: "FKUserCreator",
+                        referencedTableName: "users",
+                        referencedColumnNames: ["id"],
+                        columnNames: ["user_creator"],
+                        onDelete: "SET NULL",
+                        onUpdate: "SET NULL",
+                    }
+                ]
             })
         )
     }
