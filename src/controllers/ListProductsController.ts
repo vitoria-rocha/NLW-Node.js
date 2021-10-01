@@ -3,11 +3,15 @@ import { ListProductsService } from "../services/ListProductsService";
 
 class ListProductsController {
   async handle(request: Request, response: Response) {
-    const listProductsController = new ListProductsService();
+    const { user_id } = request;
 
-    const users = await listProductsController.execute();
+    const listProductsService = new ListProductsService();
 
-    return response.json(users);
+    const products = await listProductsService.execute(
+      user_id
+    );
+
+    return response.json(products);
   }
 }
 
